@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hamm</title>
+        <link rel="stylesheet" type="text/css" href="/css/paper.min.css" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row flex-spaces">
+                <% if(success && success.length){ %>
+                    <div class="alert alert-success">
+                        <%= success %>
+                    </div>
+                <% } %>
+
+                <% if(error && error.length){ %>
+                    <div class="alert alert-danger">
+                        <%= error %>
+                    </div>
+                <% } %>
+            </div>
+        </div>

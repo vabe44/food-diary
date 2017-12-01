@@ -1,16 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<form id="login" name="login" method="post" action="login">
-  <label for="email">Email Address</label>
-  <input class="text" name="email" type="text" />
-  <label for="password">Password</label>
-  <input name="password" type="password" />
-  <input class="btn" type="submit" value="Log In" />
-</form>
+<% include partials/header %>
+
+<div class="container">
+
+  <form id="login" name="login" method="post" action="login">
+
+    <div class="row">
+      <div class="col sm-12">
+        <div class="form-group">
+          <label for="email">Email cim</label>
+          <input name="email" class="input-block" type="email" />
+        </div>
+      </div>
+
+      <div class="col sm-12">
+        <div class="form-group">
+          <label for="password">Jelszo</label>
+          <input name="password" class="input-block" type="password" />
+        </div>
+      </div>
+
+    </div>
+
+    <button type="submit" class="btn-block background-secondary">Belepes</button>
+  </form>
+
+</div>
 
 </body>
 </html>

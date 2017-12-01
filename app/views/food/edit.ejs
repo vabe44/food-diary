@@ -1,0 +1,49 @@
+<% include ../partials/header %>
+
+<div class="container">
+
+    <form id="editfood" name="editfood" method="post" action="/food/edit/<%= food.id >">
+
+    <div class="row">
+      <div class="col sm-12">
+        <div class="form-group">
+          <label for="name">Kaja Neve</label>
+          <input name="name" class="input-block" type="text" value="<%= food.name >"/>
+        </div>
+      </div>
+
+      <div class="col sm-6">
+        <div class="form-group">
+          <label for="image">Kep</label>
+          <input name="image" class="input-block" type="text" value="<%= food.image >" />
+        </div>
+      </div>
+      <div class="col sm-6">
+        <div class="form-group">
+          <label for="source">Forras</label>
+          <input name="source" class="input-block" type="text" value="<%= food.source >"/>
+        </div>
+      </div>
+
+      <div class="col sm-12">
+        <div class="form-group">
+          <label for="notes">Megjegyzes</label>
+          <input name="notes" class="input-block" type="text" value="<%= food.notes >"/>
+        </div>
+      </div>
+
+    </div>
+
+    <button type="submit" class="btn-block background-secondary">Modositas</button>
+  </form>
+
+  <form id="delete-form" action="/food/<%= category.id %>?_method=DELETE" method="POST">
+    <button type="submit" class="btn-block background-danger">Torles</button>
+</form>
+
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+.food.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: unset;
+    justify-content: center;
+}
+
+.food.card {
+    margin: 5px;
+}
+
+.food.container a {
+    color: #41403e;
+    text-decoration: none;
+    background-image: none;
+}

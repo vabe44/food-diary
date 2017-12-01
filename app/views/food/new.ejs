@@ -1,0 +1,45 @@
+<% include ../partials/header %>
+
+<div class="container">
+
+  <form id="newfood" name="newfood" method="post" action="/food/new">
+
+    <div class="row">
+      <div class="col sm-12">
+        <div class="form-group">
+          <label for="name">Kaja Neve</label>
+          <input name="name" class="input-block" type="text" />
+        </div>
+      </div>
+
+      <div class="col sm-6">
+        <div class="form-group">
+          <label for="image">Kep</label>
+          <input name="image" class="input-block" type="text" />
+        </div>
+      </div>
+      <div class="col sm-6">
+        <div class="form-group">
+          <label for="source">Forras</label>
+          <input name="source" class="input-block" type="text" />
+        </div>
+      </div>
+
+      <div class="col sm-12">
+        <div class="form-group">
+          <label for="notes">Megjegyzes</label>
+          <input name="notes" class="input-block" type="text" />
+        </div>
+      </div>
+
+    </div>
+
+    <button type="submit" class="btn-block background-secondary">Mentes</button>
+  </form>
+
+</div>
+
+
+
+</body>
+</html>
